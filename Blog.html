@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .carousel-image{
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-img-1{
+            background: url(img/i3.jpg);
+        }
+        .bg-img-2{
+            background: url(img/i7.jpg);
+        }
+        .bg-img-3{
+            background: url(img/i2.jpg);
+        }
+        .bg-img-4{
+            background: url(img/i4.jpg);
+        }
+        .bg-img-5{
+            background: url(img/i10.jpg);
+        }
+        .carousel-caption{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    </style>
+ </head>
+ <body>
+
+
+<div id="diaporama" id="CarouselExampleIndicators" id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="0" class="active" arial-curent="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#CarouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+    
+        <div class="carousel-item active carousel-image bg-img-1">
+            <img src="img/i3.jpg" alt="" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="display-4 text-white">Chaque jour l'évasion est au rendez-vous...Découvrez nos offres exceptionnelles à de bon prix</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/i7.jpg" alt=""class="d-block w-100 carousel-image bg-img-2">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="display-4 text-white">Une promenade au coeur de l'action avec votre compagne</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/i2.jpg" alt="" class="d-block w-100 carousel-image bg-img-3">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="display-4 text-white">Découvrez des sensations fortes au périple de votre de vie</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/i4.jpg" alt="" class="d-block w-100 carousel-image bg-img-4">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="display-4 text-white">Mener vos activités dans la paix et la tranquillité</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/i10.jpg" alt="" class="d-block w-100 carousel-image bg-img-5">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="display-4 text-white">Plongez au coeur de l'action </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExampleFade" data-bs-target="#diaporama" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#CarouselExampleFade" data-bs-target="#diaporama" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>    
+</div>
+
+    <footer class="bg-success">
+        <div class="row">
+            <div class="col">
+                <h5 class="display-6 text-white">Séjours par ville</h5>
+                <ul class="list-unstyled text-white ps-3">
+                    <li>Séjours à Rome</li>
+                    <li> Séjours à Lisbonne</li>
+                    <li> Séjours à New-York</li>
+                    <li> Séjours à Londres</li>
+                    <li> Séjours à Dubai</li>
+                    <li> Séjours à Haiti</li>
+                    <li> Séjours à Marseilles</li>
+                    <li> Séjours à Istanbul</li>
+                    <li> Séjours à Barcelone</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5 class="display-6 text-white">Voyages par pays</h5>
+                <p class="text-white">
+                    Voyage à Ile Maurice
+                    Voyage en Thaïlande
+                    Voyage au Portugal
+                    Voyage en Italie
+                    Voyage au Maroc
+                    Séjours à Punta Cana
+                    Séjours en Corse
+                    Voyage aux Maldives
+                    Voyage en Grèce  
+                </p>
+            </div>
+            <div class="col">
+                <h5 class="display-6 text-white text-center">Où partir?</h5>
+                <p class="text-white text-center">
+                    Faites votre choix et contactez moi soit par mon num soit par mon email
+                </p>
+            </div>
+            <div class="col">
+                <h5 class="display-6 text-white">Vacances et clubs</h5>
+                <p class="text-white text-center">
+                    Votre séjour sera inoubliable croyez moi et tentez l'expérience   
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>

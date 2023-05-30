@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        header h1,footer h1{
+            font-weight: bold;
+           
+        }
+        header .ui{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header .x img{
+            max-width: 50px;
+            max-height:50px ;
+            padding-left: 10px;
+        }
+        header .x{
+            margin-top:10px ;
+            padding-left: 50px;
+        }
+        #particular{
+            margin-top: 50px;
+        }
+        footer{
+            margin-top: 50px;
+            text-align: center;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ui">  
+          <h1>Profitez de nos offres de voyages à bon prix</h1>
+          <div class="x">
+              <img src="img/face.jpg" alt="">
+              <img src="img/wha.jpg" alt="">
+              <img src="img/youtube.png" alt="">
+              <img src="img/twitter.png" alt="">
+          </div>
+        </div>
+    </header>
+
+
+    <div class="container bg-primary" id="particular">
+        <form action="" class="row g-3" class="needs-validation">
+            <div class="col-md-6" class="was-validated">
+                <label class="form-label" for="name">Nom*</label>
+                <input class="form-control"  placeholder="Votre nom complet" type="text" name="name" id="name" required>
+                <div class="invalid-feedback">
+                    Please enter your full name
+                </div>
+            </div>
+            <div class="col-md-6" class="was-validated">
+                <label class="form-label" for="email">Email*</label>
+                <input class="form-control" placeholder="Votre adresse email" type="email" name="email" id="email" required>
+                <div class="invalid-feedback">
+                    Please enter your electronic mail
+                </div>
+            </div>
+            <div class="col-md-12" class="was-validated">
+                <label class="form-label" for="adress">Adresse*</label>
+                <input class="form-control" placeholder="Votre domicile" type="text" name="adress" id="adress" required>
+                <div class="invalid-feedback">
+                    Please enter your adress
+                </div>
+            </div>
+            <div class="col-md-4" class="was-validated">
+                <label class="form-label" for="cp">Code postal*</label>
+                <input class="form-control" placeholder="Code postal de votre pays" type="number" name="cp" id="cp" required>
+                <div class="invalid-feedback">
+                    Please enter your post-code
+                </div>
+            </div>
+            <div class="col-md-8" class="was-validated">
+                <label class="form-label" for="ville">Ville*</label>
+                <input class="form-control" placeholder="Ville dans laquelle vous résidez" type="text" name="ville" id="ville" required>
+                <div class="invalid-feedback">
+                    Please enter your city name
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-success" type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer class="bg-dark">
+        <h1 class="text-white">Avec nous,c'est plus sur!!!!</h1>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
